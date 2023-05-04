@@ -36,8 +36,7 @@ public class CinemaBoard extends HttpServlet {
 			Pager pager=new Pager(count,curPage);
 			int start=pager.getPageBegin();
 			int end=pager.getPageEnd();
-			//List<CinemaBoardDTO> list=dao.cinemaList(start,end);
-			//	request.setAttribute("list", list);
+			//여기에도 git test	
 			
 			//검색옵션과 검색키워드
 			String searchkey=request.getParameter("searchkey");
