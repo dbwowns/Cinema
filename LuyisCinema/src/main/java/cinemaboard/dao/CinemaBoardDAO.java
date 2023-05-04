@@ -6,9 +6,7 @@ import java.util.Map;
 
 import org.apache.ibatis.session.SqlSession;
 
-import board.dto.BoardDTO;
 import cinemaboard.dto.CinemaBoardDTO;
-import page.EmpDTO;
 import sqlmap.MybatisManager;
 
 public class CinemaBoardDAO {

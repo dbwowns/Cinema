@@ -10,6 +10,7 @@
 </head>
 <body>
 
+
 <c:redirect url="/cafe_servlet/list.do"></c:redirect>
 </body>
 </html>

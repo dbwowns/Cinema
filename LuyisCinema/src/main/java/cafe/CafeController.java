@@ -17,7 +17,6 @@ import javax.servlet.http.HttpSession;
 
 import cafe.dao.CafeDAO;
 import cafe.dto.CafeDTO;
-import member.MemberDTO;
 
 
 

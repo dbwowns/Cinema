@@ -6,7 +6,6 @@ import java.sql.ResultSet;
 
 import cafe.dto.CafeDTO;
 import config.DB;
-import member.MemberDTO;
 
 
 public class CafeDAO {

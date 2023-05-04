@@ -10,11 +10,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import board.dto.BoardDTO;
 import cinemaboard.dao.CinemaBoardDAO;
 import cinemaboard.dto.CinemaBoardDTO;
-import guestbook.dto.GuestBookDTO;
-import page.EmpDTO;
 import page.Pager;
 
 
@@ -57,7 +54,7 @@ public class CinemaBoard extends HttpServlet {
 			request.setAttribute("page", pager);//페이지 네비게이션에 필요한 정보 전달
 			request.setAttribute("searchkey", searchkey);
 			request.setAttribute("search", search);
-			
+			//git에 추가 테스트
 			
 			String page="/cinemaboard/list.jsp";
 			RequestDispatcher rd=request.getRequestDispatcher(page);
