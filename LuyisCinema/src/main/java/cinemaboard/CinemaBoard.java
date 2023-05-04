@@ -36,7 +36,6 @@ public class CinemaBoard extends HttpServlet {
 			Pager pager=new Pager(count,curPage);
 			int start=pager.getPageBegin();
 			int end=pager.getPageEnd();
-			//여기에도 git test	
 			
 			//검색옵션과 검색키워드
 			String searchkey=request.getParameter("searchkey");
@@ -53,7 +52,6 @@ public class CinemaBoard extends HttpServlet {
 			request.setAttribute("page", pager);//페이지 네비게이션에 필요한 정보 전달
 			request.setAttribute("searchkey", searchkey);
 			request.setAttribute("search", search);
-			//git에 추가 테스트
 			
 			String page="/cinemaboard/list.jsp";
 			RequestDispatcher rd=request.getRequestDispatcher(page);

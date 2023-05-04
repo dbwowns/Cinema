@@ -21,10 +21,8 @@ $(function() {
 <body>
 <div class="navbar">
 	<div style="text-align: center;"> <a href="${path}/cafe_servlet/cinema.do" id="logo">Luyis Cinema</a></div>
-	<%-- <h2>${sessionScope.message}</h2> --%>
 	<ul id="menu">
 	 <li><a>${sessionScope.userid}님이 접속중입니다.</a></li>
-	<%--  <li><a href="${path}/cafe/main.jsp">home</a></li> 수정전 --%>
 	 <li><a href="${path}/cafe_servlet/list.do">home</a></li>
  	 <li><a href="#">instargram</a></li>
 	 <li><a href="${path}/cinemaboard_servlet/list.do">게시판</a></li>
@@ -63,9 +61,6 @@ $(function() {
   </div>
  </div>
  
- <%-- <div>
- <%@ include file="../guestbook/index.jsp" %>
- </div>  --%>
  <div style="margin-bottom: 50px;">
 <iframe width="700" height="400" 
 src="https://www.youtube.com/embed/vpe62i_LDps" 
