@@ -138,13 +138,13 @@ table {
 			<%--  <li><a href="${path}/cafe/main.jsp">home</a></li> 수정전 --%>
 			<li><a href="${path}/cafe_servlet/list.do">home</a></li>
 			<li><a href="#">instargram</a></li>
-			<li><a href="${path}/guestbook_servlet/list.do">게시판</a></li>
+			<li><a href="${path}/cinemaboard_servlet/list.do">게시판</a></li>
 			<li><a><button type="button" id="btnLogout"
 						style="border-radius: 6px; font: status-bar;">로그아웃</button></a></li>
 		</ul>
 	</div>
 <div style="text-align: center;">
-<h2 style="margin-top: 40px;">게시판 수정/삭제</h2>
+<h2 style="margin-top: 40px;">게시 수정/삭제</h2>
 <form name="form1" id="form1" method="post" style="display: inline-block;">
  <table border="1" width="500px" style="margin-top: 40px;">
  
