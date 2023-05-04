@@ -1,0 +1,122 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Hanalei&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
+body{
+ background-color :#E0E0E0;
+ background-size :cover;
+ font-family: 'Delicious Handrawn', cursive;
+}
+
+a:link {
+  color : black;
+  text-decoration: none;
+}
+a:visited {
+  color : black;
+  text-decoration: none;
+}
+a:hover {
+  color : black;
+  text-decoration: none;
+}
+a:active {
+  color : black;
+  text-decoration: none;
+}
+.navbar{
+    height: 70px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+}
+
+.navbar #logo{
+	font-size: 30px;
+}
+
+.header{
+    height: 450px;
+
+  overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    } 
+.header img{
+	height: 450px;
+	width: 100%;
+	position: absolute;
+  top: 70;
+  left: auto;
+  opacity: 0;
+  transition: opacity 1s !important;
+  z-index: 1;
+}
+     
+.header img.active {
+  opacity: 1; z-index: 1;
+}
+
+.navbar img{
+    vertical-align: top;
+    border: blanchedalmond 5px solid;
+}
+
+.navbar #menu{
+    float: right;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar #menu li{
+    float: left;
+    margin-left: 30px;
+    line-height: 60px;
+}
+
+.navbar #menu li a{
+    color: #545454;
+    font-size: 20px;
+    text-decoration: none;
+}
+.product-list{
+    width: 735px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.products h2{
+    font-size: 30px;
+    color: #545454;
+    margin-top:60px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.product{
+    display: block;
+    width: 225px;
+    text-align: center;
+    text-decoration:none;
+    color: black;
+    float:left;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+}
+
+.product-name{
+    margin-top: 20px;
+    margin-bottom: 4px;
+}
+
+.clearfix{
+    clear: both;
+}
+.footer{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+

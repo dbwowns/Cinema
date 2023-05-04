@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cinemaboard">
+ <select id="cbList" resultType="cinemaboard.dto.CinemaBoardDTO">
+  select *
+  from (
+    select rownum as rn, A.*
+    from (
+      select idx, name, passwd, title, content, post_date
+      from cinemaboard
+      where ${searchkey} like #{search}
+      order by idx desc
+    ) A
+  )
+  where rn between #{start} and #{end}
+ </select>
+ 
+ <select id="cbListAll" resultType="cinemaboard.dto.CinemaBoardDTO">
+  select idx,name,title,content,post_date
+  from cinemaboard
+  where name like #{search} or content like #{search}
+  order by idx desc
+ </select>
+ 
+ <insert id="cbInsert">
+  insert into cinemaboard
+  (idx,name,title,passwd,content) values 
+  ( cinemaboard_seq.nextval, #{name}, #{title}, #{passwd}, #{content} )
+ </insert>
+ 
+ <select id="passwdCheck" resultType="int">
+  select count(*) from cinemaboard
+  where idx=#{idx} and passwd=#{passwd}
+ </select>
+ 
+ <select id="cbDetail" parameterType="int" resultType="cinemaboard.dto.CinemaBoardDTO">
+  select * from cinemaboard
+  where idx=#{idx}
+ </select>
+ 
+ <update id="cbUpdate" parameterType="cinemaboard.dto.CinemaBoardDTO"> 
+  update cinemaboard set name=#{name}, title=#{title}, passwd=#{passwd}, content=#{content}
+  where idx=#{idx}
+ </update>
+ 
+ <delete id="cbDelete" parameterType="int">
+  delete from cinemaboard
+  where idx=#{idx}
+ </delete>
+ 
+  <!-- 게시물 갯수 계산  
+  여기부터밑에있는거 까지 안되면 빼버리기-->
+ <select id="cinemaCount" resultType="int">
+  select count(*) from cinemaboard
+ </select>
+ 
+
+ 
+<!--  <select id="cinemaList" resultType="cinemaboard.dto.CinemaBoardDTO">
+	 select * 
+		from(
+	  	select A.*, rownum as rn
+	  	from (
+	        select idx, name, passwd, title, content, post_date
+	        from cinemaboard
+	        order by idx
+	        ) A
+			)
+		where rn between #{start} and #{end}
+ </select> -->
+ 
+ 
+</mapper>

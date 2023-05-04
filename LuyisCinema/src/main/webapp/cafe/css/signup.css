@@ -1,0 +1,32 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Hanalei&display=swap');
+
+*{
+text-align: center;
+background-color :#E0E0E0;
+}
+body
+{
+	background-color :#E0E0E0;
+}
+h2{
+margin-top: 40px;
+
+}
+.div1{
+padding-top: 50px;
+}
+.id_box ,.passwd1_box ,.name_box ,.tel_box ,.email_box{
+padding-bottom: 7px;
+padding-top: 15px;
+font-size: 20px;
+}
+input
+{
+font-size: 17px;
+}
+.info, .login{
+font-size: 20px;
+border-radius: 4px;
+}
