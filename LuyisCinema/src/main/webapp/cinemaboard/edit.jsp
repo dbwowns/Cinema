@@ -144,7 +144,7 @@ table {
 		</ul>
 	</div>
 <div style="text-align: center;">
-<h2 style="margin-top: 40px;">게시 수정/삭제</h2>
+<h2 style="margin-top: 40px;">게시글 수정/삭제</h2>
 <form name="form1" id="form1" method="post" style="display: inline-block;">
  <table border="1" width="500px" style="margin-top: 40px;">
  
